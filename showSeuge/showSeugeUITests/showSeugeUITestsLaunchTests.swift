@@ -1,13 +1,13 @@
 //
-//  presentModallyUITestsLaunchTests.swift
-//  presentModallyUITests
+//  showSeugeUITestsLaunchTests.swift
+//  showSeugeUITests
 //
 //  Created by Engin Bolat on 5.03.2023.
 //
 
 import XCTest
 
-final class presentModallyUITestsLaunchTests: XCTestCase {
+final class showSeugeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

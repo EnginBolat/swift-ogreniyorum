@@ -1,14 +1,14 @@
 //
-//  presentModallyTests.swift
-//  presentModallyTests
+//  showSeugeTests.swift
+//  showSeugeTests
 //
 //  Created by Engin Bolat on 5.03.2023.
 //
 
 import XCTest
-@testable import presentModally
+@testable import showSeuge
 
-final class presentModallyTests: XCTestCase {
+final class showSeugeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

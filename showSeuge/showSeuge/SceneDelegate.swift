@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  presentModally
+//  showSeuge
 //
 //  Created by Engin Bolat on 5.03.2023.
 //
