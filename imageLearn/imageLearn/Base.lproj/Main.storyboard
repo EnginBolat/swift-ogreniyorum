@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imageLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8f-sm-rxd">
+                                <rect key="frame" x="99" y="465" width="83" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="F5m-gF-bo3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="lPZ-xu-VnH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 1"/>
+                                <connections>
+                                    <action selector="image1Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gt8-qs-be6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlM-jY-5fG">
+                                <rect key="frame" x="213" y="465" width="85" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="anj-K5-J3i"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 2"/>
+                                <connections>
+                                    <action selector="image2Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FDZ-rQ-UGc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4QP-oj-Gdh">
+                                <rect key="frame" x="20" y="179" width="352" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="Kxy-pR-TM9"/>
+                                    <constraint firstAttribute="height" constant="217" id="gon-xd-jh9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VlM-jY-5fG" secondAttribute="trailing" constant="95" id="5No-E2-nT4"/>
+                            <constraint firstItem="4QP-oj-Gdh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="8k7-kO-sde"/>
+                            <constraint firstItem="VlM-jY-5fG" firstAttribute="leading" secondItem="s8f-sm-rxd" secondAttribute="trailing" constant="31" id="95c-2e-wy2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s8f-sm-rxd" secondAttribute="bottom" constant="318" id="CpY-mZ-B03"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4QP-oj-Gdh" secondAttribute="trailing" constant="21" id="DlV-0E-Orn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VlM-jY-5fG" secondAttribute="bottom" constant="318" id="Obg-aF-3oP"/>
+                            <constraint firstItem="VlM-jY-5fG" firstAttribute="top" secondItem="4QP-oj-Gdh" secondAttribute="bottom" constant="69" id="P9z-af-X3y"/>
+                            <constraint firstItem="4QP-oj-Gdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WM8-Ob-ACi"/>
+                            <constraint firstItem="s8f-sm-rxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="gF1-2X-oIC"/>
+                            <constraint firstItem="VlM-jY-5fG" firstAttribute="leading" secondItem="s8f-sm-rxd" secondAttribute="trailing" constant="31" id="kMY-LB-k2l"/>
+                            <constraint firstItem="s8f-sm-rxd" firstAttribute="top" secondItem="4QP-oj-Gdh" secondAttribute="bottom" constant="69" id="xhH-eY-YGC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewObject" destination="4QP-oj-Gdh" id="A43-nw-bqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
